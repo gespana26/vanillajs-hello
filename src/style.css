@@ -1,1 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+#main {
+  margin-top: 10%;
+  font-weight: bold;
+  font-size: x-large;
+}
