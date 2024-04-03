@@ -3,7 +3,7 @@ import "bootstrap";
 import "./style.css";
 
 //write your code here
-function nada() {
+function generadorDeExcusas() {
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
   let action = ["ate", "peed", "crushed", "broke"];
   let what = ["my homework", "the keys", "the car"];
@@ -19,11 +19,11 @@ function nada() {
   let who_r = who[var2];
   var2 = Math.floor(Math.random() * 4);
   let action_r = action[var2];
-  var2 = Math.floor(Math.random() * 2);
+  var2 = Math.floor(Math.random() * 3);
   let what_r = what[var2];
   var2 = Math.floor(Math.random() * 5);
   let when_r = when[var2];
   let cadena = document.getElementById("excuse");
   cadena.innerHTML = who_r + " " + action_r + " " + what_r + " " + when_r;
 }
-window.onload = nada();
+window.onload = generadorDeExcusas();
