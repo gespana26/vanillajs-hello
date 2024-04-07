@@ -14,16 +14,13 @@ function generadorDeExcusas() {
     "during my lunch",
     "while I was praying"
   ];
-  let var2 = 0;
-  var2 = Math.floor(Math.random() * 4);
-  let who_r = who[var2];
-  var2 = Math.floor(Math.random() * 4);
-  let action_r = action[var2];
-  var2 = Math.floor(Math.random() * 3);
-  let what_r = what[var2];
-  var2 = Math.floor(Math.random() * 5);
-  let when_r = when[var2];
+
+  let who_r = Math.floor(Math.random() * who.length);
+  let action_r = Math.floor(Math.random() * action.length);
+  let what_r = Math.floor(Math.random() * what.length);
+  let when_r = Math.floor(Math.random() * when.length);
+
   let cadena = document.getElementById("excuse");
-  cadena.innerHTML = who_r + " " + action_r + " " + what_r + " " + when_r;
+  cadena.innerHTML = `${who[who_r]} ${action[action_r]} ${what[what_r]} ${when[when_r]}`;
 }
 window.onload = generadorDeExcusas();
